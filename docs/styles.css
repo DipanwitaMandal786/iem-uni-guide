@@ -1,33 +1,71 @@
-* {
+** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 body {
-  background: linear-gradient(180deg, #f8f9ff, #ffffff);
+  background: #ffffff;
   color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
 }
 
 /* HERO */
 .hero {
-  min-height: 100vh;
-  padding: 120px 10%;
+  padding: 160px 10% 120px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 3.2rem;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #555;
   max-width: 700px;
   margin: auto;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 .hero-buttons {
@@ -36,7 +74,6 @@ body {
 
 button {
   padding: 14px 28px;
-  font-size: 1rem;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -57,17 +94,19 @@ button {
 /* FEATURES */
 .features {
   padding: 100px 10%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
 }
 
-.feature h3 {
+.feature-row {
+  padding: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.feature-row h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
-.feature p {
+.feature-row p {
   color: #555;
 }
 
@@ -75,10 +114,10 @@ button {
 .cta {
   padding: 100px 10%;
   text-align: center;
-  background: #f2f3ff;
+  background: #f5f6ff;
 }
 
 .cta h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 15px;
 }
