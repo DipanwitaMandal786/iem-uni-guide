@@ -35,8 +35,8 @@
     </p>
 
     <div class="hero-buttons">
-      <button class="primary">Explore Platform</button>
-      <button class="secondary">Join Community</button>
+      <button class="nav-btn">Get Started</button>
+
     </div>
   </section>
 
@@ -81,45 +81,33 @@
     <button class="primary">Start Using Now</button>
   </section>
 
+<!-- AI ASSISTANT BUTTON -->
+<div id="ai-button">🤖</div>
+
+<!-- AI ASSISTANT PANEL -->
+<div id="ai-panel">
+  <div class="ai-header">
+    <span>AI Assistant</span>
+    <button id="ai-close">✕</button>
+  </div>
+
+  <div class="ai-messages" id="ai-messages">
+    <div class="ai-message bot">
+      Hi 👋 I’m your IEM Uni Guide AI.  
+      Ask me anything about campus, events, or academics.
+    </div>
+  </div>
+
+  <div class="ai-input">
+    <input
+      type="text"
+      id="ai-input"
+      placeholder="Ask something..."
+    />
+    <button id="ai-send">Send</button>
+  </div>
+</div>
 
 
 </body>
 </html>
-/* ===== LOVABLE SPLIT SECTIONS ===== */
-.lovable-section {
-  padding: 120px 10%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-
-.lovable-section.reverse {
-  direction: rtl;
-}
-
-.lovable-section.reverse .text {
-  direction: ltr;
-}
-
-.lovable-section h2 {
-  font-size: 2.6rem;
-  margin-bottom: 20px;
-}
-
-.lovable-section p {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  max-width: 500px;
-}
-
-.visual {
-  height: 280px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.06);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  box-shadow: 0 0 40px rgba(108, 99, 255, 0.15);
-}
