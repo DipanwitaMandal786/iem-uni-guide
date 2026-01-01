@@ -7,64 +7,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-       <h1>Your Campus, Simplified</h1>
-       <p class="subheading">Navigate IEM Like a Pro</p>
-       <p class="description">The ultimate companion app for IEM students. Find your way, connect with teachers, join events, and be part of a thriving campus community.</p>
-    </header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEM Uni Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <!-- Address Block -->
-    <section class="address">
-        <p>IEM Management Building, Sector V, Salt Lake, Kolkata</p>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Your Complete IEM University Guide</h1>
+    <p>Everything you need — academics, events, guidance, and community — in one place.</p>
 
-    <!-- Features Section -->
-    <main class="features">
-        <h2>Everything You Need</h2>
-        <p>From finding classrooms to joining hackathons, we've got you covered</p>
-        <div class="features-grid">
-            <div class="feature-card" data-modal="map" role="button" tabindex="0">
-                <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/map.svg" alt="Campus Map" class="feature-icon">
-                <h3>Interactive Campus Map</h3>
-                <p>Navigate the campus with ease. Find classrooms, labs, and facilities instantly.</p>
-        </div>
-            <div class="feature-card" data-modal="canteen" role="button" tabindex="0">
-                <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/utensils.svg" alt="Canteen Fast Pass" class="feature-card">
-                <h3>Canteen Fast Pass</h3>
-                <p>Subscribe to skip queues at the canteen.</p>
-            </div>
-            <div class="feature-card" data-modal="doubts" role="button" tabindex="0">
-                <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/chat-bubble-left-right.svg" alt="Doubt Sessions" class="feature-icon">
-                <h3>Doubt Sessions</h3>
-                <p>Book one-on-one sessions with teachers. No more waiting outside offices.</p>
-            </div>
-            <div class="feature-card" data-modal="events" role="button" tabindex="0">
-                <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/calendar.svg" alt="Events and Hackathons" class="feature-icon">
-                <h3>Events & Hackathons</h3>
-                <p>Never miss a hackathon or coding contest. Register and pay seamlessly.</p>
-            </div>
-            <div class="feature-card" data-modal="forums" role="button" tabindex="0">
-                <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/users.svg" alt="Community Forums" class="feature-icon">
-                <h3>Community Forums</h3>
-                <p>Connect with seniors, ask questions, and earn FAME points.</p>
-            </div>
-            <div class="feature-card" data-modal="ai" role="button" tabindex="0">
-                <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/sparkles.svg" alt="AI Assistant" class="feature-icon">
-                <h3>AI Assistant</h3>
-                <p>Your personal campus guide. Get instant help with anything.</p>
-            </div>
-        </div>
-    </main>
+    <div class="hero-buttons">
+      <button class="primary">Explore Now</button>
+      <button class="secondary">Join Community</button>
+    </div>
+  </section>
 
-    <!-- Modal Overlay (Hidden by default) -->
-    <div id="modal-overlay" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modal-body"></div>
-        </div>
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">
+      <h3>Interactive Campus Map</h3>
+      <p>Find classrooms, labs, and offices instantly.</p>
     </div>
 
-    <script src="script.js"></script>
+    <div class="feature">
+      <h3>Events & Hackathons</h3>
+      <p>Never miss important competitions or workshops.</p>
+    </div>
+
+    <div class="feature">
+      <h3>AI Assistant</h3>
+      <p>Your personal guide for campus and academics.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Built for IEM Students</h2>
+    <p>Designed to make campus life smarter and easier.</p>
+    <button class="primary">Get Started</button>
+  </section>
+
+</body>
+</html>
+
 </body>
 </html>
