@@ -173,3 +173,32 @@ button {
   backdrop-filter: blur(20px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
+/* ===== THEME TOGGLE BUTTON ===== */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+/* ===== LIGHT THEME ===== */
+body.light {
+  --bg-main: #f6f7ff;
+  --bg-soft: #ffffff;
+  --glass: rgba(255, 255, 255, 0.8);
+  --text-main: #111;
+  --text-muted: #555;
+  --accent: #6c63ff;
+  background: linear-gradient(180deg, #ffffff, #f2f3ff);
+}
+
+body.light .navbar {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light .visual {
+  background: rgba(0, 0, 0, 0.04);
+}
