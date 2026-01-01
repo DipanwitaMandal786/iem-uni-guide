@@ -37,25 +37,38 @@
   </section>
 
   <!-- FEATURE SECTIONS (Lovable-style rows) -->
-  <section class="features">
-    <div class="feature-row fade-up">
+  <section class="lovable-section fade-up">
+  <div class="text">
+    <h2>Navigate Campus Effortlessly</h2>
+    <p>
+      Explore classrooms, labs, offices, and important locations
+      with our interactive campus map built for IEM students.
+    </p>
+  </div>
+  <div class="visual">📍</div>
+</section>
 
-      <h3>📍 Interactive Campus Map</h3>
-      <p>Find classrooms, labs, and offices instantly.</p>
-    </div>
+<section class="lovable-section reverse fade-up">
+  <div class="text">
+    <h2>Never Miss an Event</h2>
+    <p>
+      Get real-time updates on hackathons, workshops,
+      competitions, and college events — all in one place.
+    </p>
+  </div>
+  <div class="visual">🎯</div>
+</section>
 
-    <div class="feature-row fade-up">
-
-      <h3>🎯 Events & Hackathons</h3>
-      <p>Stay updated with competitions and workshops.</p>
-    </div>
-
-    <div class="feature-row fade-up">
-
-      <h3>🤖 AI Assistant</h3>
-      <p>Your personal campus and academic guide.</p>
-    </div>
-  </section>
+<section class="lovable-section fade-up">
+  <div class="text">
+    <h2>Your Smart AI Assistant</h2>
+    <p>
+      Ask questions, get guidance, and simplify your
+      academic and campus life using AI.
+    </p>
+  </div>
+  <div class="visual">🤖</div>
+</section>
 
   <!-- CTA -->
   <section class="cta">
@@ -68,3 +81,41 @@
 
 </body>
 </html>
+/* ===== LOVABLE SPLIT SECTIONS ===== */
+.lovable-section {
+  padding: 120px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.lovable-section.reverse {
+  direction: rtl;
+}
+
+.lovable-section.reverse .text {
+  direction: ltr;
+}
+
+.lovable-section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+}
+
+.lovable-section p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 500px;
+}
+
+.visual {
+  height: 280px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  box-shadow: 0 0 40px rgba(108, 99, 255, 0.15);
+}
