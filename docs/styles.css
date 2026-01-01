@@ -167,3 +167,9 @@ button {
   opacity: 1;
   transform: translateY(0);
 }
+/* ===== NAVBAR SCROLL EFFECT ===== */
+.navbar.scrolled {
+  background: rgba(10, 12, 30, 0.85);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
