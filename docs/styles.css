@@ -212,3 +212,32 @@ button {
   font-size: 5rem;
   box-shadow: 0 0 40px rgba(108, 99, 255, 0.15);
 }
+/* ===== THEME TOGGLE BUTTON ===== */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+/* ===== LIGHT THEME ===== */
+body.light {
+  --bg-main: #f6f7ff;
+  --bg-soft: #ffffff;
+  --glass: rgba(255, 255, 255, 0.8);
+  --text-main: #111;
+  --text-muted: #555;
+  --accent: #6c63ff;
+  background: linear-gradient(180deg, #ffffff, #f2f3ff);
+}
+
+body.light .navbar {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light .visual {
+  background: rgba(0, 0, 0, 0.04);
+}
